@@ -1,5 +1,5 @@
-iceberg-syntax theme
-====================
+iceberg-syntax
+==============
 
 
 Overview
