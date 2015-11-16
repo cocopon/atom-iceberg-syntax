@@ -10,7 +10,7 @@ It brings a cool-headed perspective for your happy coding :)
 See the [official site](http://cocopon.me/app/vim-iceberg/) for more
 information.
 
-TODO: Screenshot
+![Screenshot](http://cocopon.me/app/vim-iceberg/github/screenshot_atom.png)
 
 
 License
