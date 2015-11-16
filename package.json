@@ -1,0 +1,15 @@
+{
+  "name": "iceberg-syntax",
+  "theme": "syntax",
+  "version": "0.1.0",
+  "description": "A dark blue color scheme for Atom",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/cocopon/atom-iceberg-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
