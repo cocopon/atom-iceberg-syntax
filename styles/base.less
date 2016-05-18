@@ -319,3 +319,37 @@ atom-text-editor[mini] .scroll-view,
     border-width: 0;
   }
 }
+
+// JavaScript
+.js {
+  &.class {
+    color: @blue;
+  }
+  &.constant {
+    color: @syntax-text-color;
+  }
+  &.constant.boolean {
+    color: @purple;
+  }
+  &.entity.name.function {
+    color: @syntax-text-color;
+  }
+  &.entity.name.function.constructor {
+    color: @blue;
+  }
+  &.keyword.operator {
+    color: @blue;
+  }
+  &.property {
+    color: @syntax-text-color;
+  }
+  &.punctuation.definition.string {
+    color: @cyan;
+  }
+  &.variable {
+    color: @syntax-text-color;
+  }
+  &.variable.language {
+    color: @green;
+  }
+}
