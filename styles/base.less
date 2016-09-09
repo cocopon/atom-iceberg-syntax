@@ -264,7 +264,21 @@ atom-text-editor::shadow {
     }
   }
 
-  // GitHub Flavored Markdown
+  .diff {
+    &.markup.deleted {
+      &:extend(atom-text-editor::shadow .markup.deleted);
+    }
+    &.markup.inserted {
+      &:extend(atom-text-editor::shadow .markup.inserted);
+    }
+    &.meta.header {
+      color: @blue;
+    }
+    &.meta.range,
+    &.meta.range.unified {
+      color: @purple;
+    }
+  }
   .gfm {
     &.entity {
       color: @blue;
@@ -279,8 +293,6 @@ atom-text-editor::shadow {
       color: @cyan;
     }
   }
-
-  // JavaScript
   .js {
     &.class {
       color: @blue;
