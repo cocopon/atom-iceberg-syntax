@@ -296,13 +296,6 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   }
 }
 
-.source.gfm .markup {
-  -webkit-font-smoothing: auto;
-  &.heading {
-    color: @green;
-  }
-}
-
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
@@ -317,6 +310,19 @@ atom-text-editor[mini] .scroll-view,
     background-color: lighten(@syntax-background-color, 20%);
     color: lighten(@syntax-text-color, 50%);
     border-width: 0;
+  }
+}
+
+// GitHub Flavored Markdown
+.gfm {
+  &.heading {
+    color: @green;
+  }
+  &.list {
+    color: @blue;
+  }
+  &.raw {
+    color: @cyan;
   }
 }
 
