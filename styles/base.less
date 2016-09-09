@@ -7,15 +7,12 @@ atom-text-editor, :host {
   .wrap-guide {
     background-color: @syntax-wrap-guide-color;
   }
-
   .indent-guide {
     color: @syntax-indent-guide-color;
   }
-
   .invisible-character {
     color: @syntax-invisible-character-color;
   }
-
   .gutter {
     background-color: @syntax-gutter-background-color;
     color: @syntax-gutter-text-color;
@@ -25,7 +22,6 @@ atom-text-editor, :host {
         background-color: @syntax-gutter-background-color-selected;
         color: @syntax-gutter-text-color-selected;
       }
-
       &.cursor-line-no-selection {
         color: @syntax-gutter-text-color-selected;
       }
@@ -37,15 +33,12 @@ atom-text-editor, :host {
   .fold-marker:after {
     color: @syntax-gutter-text-color;
   }
-
   .invisible {
     color: @syntax-text-color;
   }
-
   .cursor {
     color: @syntax-cursor-color;
   }
-
   .selection .region {
     background-color: @syntax-selection-color;
   }
@@ -71,7 +64,6 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.name.type {
     color: @light-orange;
   }
-
   &.other.inherited-class {
     color: @green;
   }
@@ -83,15 +75,12 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.control {
     color: @blue;
   }
-
   &.operator {
     color: @syntax-text-color;
   }
-
   &.other.special-method {
     color: @blue;
   }
-
   &.other.unit {
     color: @purple;
   }
@@ -107,15 +96,12 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.character.escape {
     color: @cyan;
   }
-
   &.numeric {
     color: @purple;
   }
-
   &.other.color {
     color: @cyan;
   }
-
   &.other.symbol {
     color: @green;
   }
@@ -127,7 +113,6 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.interpolation {
     color: darken(@green, 10%);
   }
-
   &.parameter.function {
     color: @syntax-text-color;
   }
@@ -159,41 +144,34 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
     &.comment {
       color: @syntax-comment-color;
     }
-
     &.string,
     &.variable,
     &.parameters,
     &.array {
       color: @syntax-text-color;
     }
-
     &.heading,
     &.identity {
       color: @blue;
     }
-
     &.bold {
       color: @light-orange;
       font-weight: bold;
     }
-
     &.italic {
       color: @purple;
       font-style: italic;
     }
   }
-
   &.section.embedded {
     color: @green;
   }
-
 }
 
 .support {
   &.class {
     color: @light-orange;
   }
-
   &.function  {
     color: @cyan;
 
@@ -207,19 +185,15 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.name.function {
     color: @blue;
   }
-
   &.name.class, &.name.type.class {
     color: @light-orange;
   }
-
   &.name.section {
     color: @blue;
   }
-
   &.name.tag {
     color: @blue;
   }
-
   &.other.attribute-name {
     color: @purple;
 
@@ -233,19 +207,15 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
   &.class {
     color: @light-orange;
   }
-
   &.link {
     color: @orange;
   }
-
   &.require {
     color: @blue;
   }
-
   &.selector {
     color: @purple;
   }
-
   &.separator {
     background-color: @syntax-comment-color;
     color: @syntax-text-color;
@@ -261,55 +231,30 @@ atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .regio
     color: @orange;
     font-weight: bold;
   }
-
   &.changed {
     color: @purple;
   }
-
   &.deleted {
     color: @red;
   }
-
   &.italic {
     color: @purple;
     font-style: italic;
   }
-
   &.heading .punctuation.definition.heading {
     color: @blue;
   }
-
   &.inserted {
     color: @green;
   }
-
   &.list {
     color: @red;
   }
-
   &.quote {
     color: @orange;
   }
-
   &.raw.inline {
     color: @green;
-  }
-}
-
-atom-text-editor[mini] .scroll-view,
-:host([mini]) .scroll-view {
-  padding-left: 1px;
-}
-
-.spell-check-misspelling .region {
-  border-bottom: @red dotted 1px;
-}
-
-.bracket-matcher {
-  .region {
-    background-color: lighten(@syntax-background-color, 20%);
-    color: lighten(@syntax-text-color, 50%);
-    border-width: 0;
   }
 }
 
@@ -360,5 +305,22 @@ atom-text-editor[mini] .scroll-view,
   }
   &.variable.language {
     color: @green;
+  }
+}
+
+atom-text-editor[mini] .scroll-view,
+:host([mini]) .scroll-view {
+  padding-left: 1px;
+}
+
+.spell-check-misspelling .region {
+  border-bottom: @red dotted 1px;
+}
+
+.bracket-matcher {
+  .region {
+    background-color: lighten(@syntax-background-color, 20%);
+    color: lighten(@syntax-text-color, 50%);
+    border-width: 0;
   }
 }
