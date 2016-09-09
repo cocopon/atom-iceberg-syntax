@@ -4,7 +4,7 @@ iceberg-syntax
 
 Overview
 --------
-Iceberg is a dark color scheme for Atom, originally for Vim.
+Iceberg is a dark blue color scheme for Atom, originally for Vim.
 It brings a cool-headed perspective for your happy coding :)
 
 See the [official site](http://cocopon.github.io/iceberg.vim/) for more
