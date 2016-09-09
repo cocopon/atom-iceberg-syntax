@@ -43,33 +43,35 @@ atom-text-editor, :host {
   }
 }
 
-atom-text-editor::shadow .highlight.find-result .region {
-  background-color: fade(@syntax-text-color, 20%);
-  border-radius: 2px;
-  border-width: 0;
-}
-atom-text-editor::shadow .highlight.current-result .region,
-atom-text-editor::shadow .highlight.current-result ~ .highlight.selection .region {
-  background-color: fade(@orange, 20%);
-  border-radius: 2px;
-  border-width: 0;
+atom-text-editor::shadow {
+  .bracket-matcher {
+    .region {
+      background-color: lighten(@syntax-background-color, 20%);
+      color: lighten(@syntax-text-color, 50%);
+      border-width: 0;
+    }
+  }
+  .highlight {
+    &.find-result .region {
+      background-color: fade(@syntax-text-color, 20%);
+      border-radius: 2px;
+      border-width: 0;
+    }
+    &.current-result .region,
+    &.current-result ~ &.selection .region {
+      background-color: fade(@orange, 40%);
+      border-radius: 2px;
+      border-width: 0;
+    }
+  }
+  .spell-check-misspelling .region {
+    border-bottom: @red dotted 1px;
+  }
 }
 
 atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
-}
-
-.spell-check-misspelling .region {
-  border-bottom: @red dotted 1px;
-}
-
-.bracket-matcher {
-  .region {
-    background-color: lighten(@syntax-background-color, 20%);
-    color: lighten(@syntax-text-color, 50%);
-    border-width: 0;
-  }
 }
 
 atom-text-editor::shadow {
