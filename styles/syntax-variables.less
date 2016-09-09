@@ -7,9 +7,10 @@
 @syntax-selection-color: saturate(lighten(@syntax-background-color, 10%), 5%);
 
 // Guide colors
-@syntax-wrap-guide-color: saturate(lighten(@syntax-background-color, 8%), 9%);
-@syntax-indent-guide-color: saturate(lighten(@syntax-background-color, 8%), 9%);
-@syntax-invisible-character-color: saturate(lighten(@syntax-background-color, 8%), 9%);
+@syntax-guide-color: fadeout(saturate(lighten(@syntax-background-color, 20%), 10%), 70%);
+@syntax-wrap-guide-color: @syntax-guide-color;
+@syntax-indent-guide-color: @syntax-guide-color;
+@syntax-invisible-character-color: @syntax-guide-color;
 
 // For find and replace markers
 @syntax-result-marker-color: @syntax-text-color;
