@@ -303,6 +303,18 @@ atom-text-editor::shadow {
       color: @cyan;
     }
   }
+  .html {
+    &.entity {
+      &.name.tag.other {
+        color: @syntax-text-color;
+      }
+    }
+    &.meta {
+      &.doctype {
+        color: @orange;
+      }
+    }
+  }
   .js {
     &.class {
       color: @blue;
