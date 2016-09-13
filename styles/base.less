@@ -266,6 +266,14 @@ atom-text-editor::shadow {
     }
   }
 
+  .css {
+    &.property-name {
+      color: fadeout(@syntax-text-color, 50%);
+    }
+    &.property-name.support {
+      color: @syntax-text-color;
+    }
+  }
   .diff {
     &.markup.deleted {
       &:extend(atom-text-editor::shadow .markup.deleted);
