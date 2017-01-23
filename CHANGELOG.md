@@ -1,3 +1,7 @@
+## 0.2.3
+* Remove deprecated Shadow DOM selector
+
+
 ## 0.2.2
 * Added styles for Diff
 * Updated guide styles
